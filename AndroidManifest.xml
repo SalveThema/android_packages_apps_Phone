@@ -287,7 +287,8 @@
         <activity android:name="NetworkSetting"
                 android:label="@string/networks"
                 android:configChanges="orientation|screenSize|keyboardHidden"
-                android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+                android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+                android:parentActivityName="Settings$WifiSettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.NETWORK_OPERATOR_SETTINGS" />
@@ -438,6 +439,17 @@
             </intent-filter>
         </activity>
 
+        <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
+        <activity android:name="BlacklistSetting"
+                android:exported="false"
+                android:label="@string/blacklist_title"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <!-- bluetooth phone service -->
         <service android:name="BluetoothPhoneService">
             <intent-filter>
@@ -526,7 +538,7 @@
         </receiver>
 
         <!-- BroadcastReceiver for receiving Intents from Notification mechanism. -->
-        <receiver android:name="PhoneGlobals$NotificationBroadcastReceiver" exported="false">
+        <receiver android:name="PhoneGlobals$NotificationBroadcastReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="com.android.phone.ACTION_HANG_UP_ONGOING_CALL" />
                 <action android:name="com.android.phone.ACTION_CALL_BACK_FROM_NOTIFICATION" />
