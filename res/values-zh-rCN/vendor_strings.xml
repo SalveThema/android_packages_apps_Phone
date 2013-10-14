@@ -90,4 +90,5 @@
     <string name="voice_quality_entry_crisp">清脆</string>
     <string name="voice_quality_entry_bright">明亮</string>
     <string name="enter_input">USSD 信息必须要在 <xliff:g id="min_len" >%d</xliff:g> 与 <xliff:g id="max_len" >%d</xliff:g> 字符之间. 请重新尝试.</string>
+    <string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"首选网络模式：LTE / CDMA"</string>
 </resources>

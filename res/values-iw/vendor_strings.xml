@@ -52,4 +52,5 @@
     <string name="national_roaming_disable">התחבר לשירותי נתונים בעת נדידה בארץ</string>
     <string name="perm_change_mobile_network">שינוי רשת (2G/3G)</string>
     <string name="perm_change_mobile_network_desc">יישום עם הרשאה זו יכול, בכל זמן, לעבור בין רשת 2G לרשת 3G. רשת 3G מהירה יותר, צורכת יותר סוללה, ועלולה להיות יקרה יותר.</string>
+    <string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"מצב רשת מועדפת: LTE / CDMA"</string>
 </resources>

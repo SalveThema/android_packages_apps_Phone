@@ -98,4 +98,6 @@
 
     <string name="enter_input">USSD-запрос должен быть от <xliff:g id="min_len" >%d</xliff:g> до <xliff:g id="max_len" >%d</xliff:g> символов. Пожалуйста, попробуйте ещё раз.</string>
 
+    <string name="card_title_waiting_call">Ожидание вызова</string>
+
 </resources>
